@@ -1,0 +1,28 @@
+<div class="d-flex overflow-auto pt-3 w-100 h-100">
+  <form class="form px-3 w-100" [formGroup]="bankForm" (ngSubmit)="bankForm.valid && addData()">
+    <div class="form-group">
+      <label for="bankName">Bank Name </label>
+      <input class="form-control form-control-sm w-100" type="text" formControlName="bankName">
+    </div>
+    <div class="form-group">
+      <label for="baseCurrency">Base Currency</label>
+      <select class="form-control form-control-sm" formControlName="baseCurrency">
+        <option value="" disabled selected>Select</option>
+        <option *ngFor="let countryCode of countryCode" [ngValue]="countryCode">{{countryCode}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input class="form-control form-control-sm w-100" type="number" formControlName="amount">
+    </div>
+    <div class="form-group">
+      <label for="targetCurrency">Target Currency</label>
+      <select class="form-control form-control-sm" formControlName="targetCurrency">
+        <option value="" disabled selected>Select</option>
+        <option *ngFor="let countryCode of countryCode" [ngValue]="countryCode">{{countryCode}}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-info px-4">SUBMIT</button>
+    <button class="btn btn-info px-4" [routerLink]="['/bank/list']">Next</button>
+  </form>
+</div>

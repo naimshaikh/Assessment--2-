@@ -1,0 +1,42 @@
+{
+  "Bank": [
+    {
+      "bankName": "SBI",
+      "baseCurrency": "INR",
+      "amount": 2,
+      "targetCurrency": "USD",
+      "total": 138.74992,
+      "id": 1
+    },
+    {
+      "bankName": "BOI",
+      "baseCurrency": "INR",
+      "amount": 5,
+      "targetCurrency": "AUD",
+      "total": 248.45350499999998,
+      "id": 2
+    },
+    {
+      "bankName": "BOB",
+      "baseCurrency": "INR",
+      "amount": 5,
+      "targetCurrency": "TRY",
+      "total": 59.86869,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "bankName": "SBI",
+      "baseCurrency": "INR",
+      "amount": 2,
+      "targetCurrency": "USD"
+    },
+    {
+      "id": 5,
+      "bankName": "AXIS",
+      "baseCurrency": "USD",
+      "amount": 10,
+      "targetCurrency": "INR"
+    }
+  ]
+}

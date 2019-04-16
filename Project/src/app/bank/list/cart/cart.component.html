@@ -1,0 +1,13 @@
+<div class="card-columns">
+  <div class="card" *ngFor="let contentList of contentData">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text"><b>Bank Name: </b> {{contentList.bankName}} </p>
+      <p class="card-text"><b>Base Currency:</b> {{contentList.baseCurrency}} </p>
+      <p class="card-text"> <b>Amount:</b> {{contentList.amount}} </p>
+      <p class="card-text"><b>Target Currency:</b> {{contentList.targetCurrency}} </p>
+      <p class="card-text"><b>Rate Currency:</b> {{contentList.rate | number:'1.2-3'}} </p>
+      <p class="card-text"><b>Total : </b> {{contentList.total | number:'1.2-3'}} </p>
+    </div>
+  </div>
+</div>
